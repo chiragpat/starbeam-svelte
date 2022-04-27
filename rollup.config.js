@@ -6,6 +6,8 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
+import alias from '@rollup/plugin-alias';
+import starbeamPreprocessor from './preprocessor';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -31,7 +33,7 @@ function serve() {
 }
 
 export default {
-  input: 'src/main.ts',
+  input: 'examples/crud-app/main.ts',
   output: {
     sourcemap: true,
     format: 'iife',
@@ -40,7 +42,10 @@ export default {
   },
   plugins: [
     svelte({
-      preprocess: sveltePreprocess({ sourceMap: !production }),
+      preprocess: [
+        starbeamPreprocessor(),
+        sveltePreprocess({ sourceMap: !production }),
+      ],
 			compilerOptions: {
         // enable run-time checks when not in production
         dev: !production
@@ -60,10 +65,15 @@ export default {
       dedupe: ['svelte']
     }),
     commonjs(),
-		typescript({
-			sourceMap: !production,
-			inlineSources: !production
-		}),
+    typescript({
+      sourceMap: !production,
+      inlineSources: !production
+    }),
+    alias({
+      entries: {
+        '@starbeam/svelte': './src/index.ts'
+      }
+    }),
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated
