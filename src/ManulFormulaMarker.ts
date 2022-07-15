@@ -1,10 +1,10 @@
 import {
+  TIMELINE,
   ManualFormula,
   type FinishedManualFormula,
   type Reactive,
   type StartedManualFormula
-} from '@starbeam/reactive';
-import { TIMELINE, } from '@starbeam/core';
+} from '@starbeam/core';
 
 export default class ManualFormulaMarker {
   static create(getSubscribers: () => Set<() => void>) {

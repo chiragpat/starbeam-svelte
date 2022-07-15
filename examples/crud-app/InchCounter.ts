@@ -1,5 +1,5 @@
-import { Formula, Cell, type Reactive } from '@starbeam/reactive';
-import { reactive } from '@starbeam/core';
+import { Formula, Reactive } from '@starbeam/core'
+import { reactive } from '@starbeam/js';
 
 interface InchCounterInterface {
   increment: () => void;
@@ -7,7 +7,7 @@ interface InchCounterInterface {
 }
 
 export default function InchCounter(): InchCounterInterface {
-  let state = reactive({
+  let state = reactive.object({
     inches: 0
   })
 

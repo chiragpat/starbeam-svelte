@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Cell } from '@starbeam/reactive';
+  import { Cell } from '@starbeam/core';
   import { use, CompiledReactive } from '@starbeam/svelte';
   import { Table } from './table';
   import { People, type Person } from './table/people';

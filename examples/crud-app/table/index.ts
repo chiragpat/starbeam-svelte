@@ -1,4 +1,4 @@
-import { reactive } from '@starbeam/core';
+import { reactive } from '@starbeam/js';
 
 export type Row<T> = {
   id: string;
@@ -6,7 +6,7 @@ export type Row<T> = {
 
 export class Table<T> {
   #id = 0;
-  #rows: Map<String, Row<T>> = reactive(Map);
+  #rows: Map<String, Row<T>> = reactive.Map();
 
   constructor(readonly columns: (keyof T)[]) {}
 

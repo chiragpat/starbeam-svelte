@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@rollup/plugin-alias': ^3.1.9
@@ -25,16 +25,16 @@ devDependencies:
   '@rollup/plugin-alias': 3.1.9_rollup@2.70.2
   '@rollup/plugin-commonjs': 17.1.0_rollup@2.70.2
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.70.2
-  '@rollup/plugin-typescript': 8.3.2_056aba5e56e0ab5307259a29131f3fbe
+  '@rollup/plugin-typescript': 8.3.2_avvluxsw4cvvgbzftiurghz7xy
   '@tsconfig/svelte': 2.0.1
   rollup: 2.70.2
   rollup-plugin-css-only: 3.1.0_rollup@2.70.2
   rollup-plugin-livereload: 2.0.5
-  rollup-plugin-svelte: 7.1.0_rollup@2.70.2+svelte@3.47.0
+  rollup-plugin-svelte: 7.1.0_73czwoeorq7uo4rkugizdazdte
   rollup-plugin-terser: 7.0.2_rollup@2.70.2
   svelte: 3.47.0
   svelte-check: 2.7.0_svelte@3.47.0
-  svelte-preprocess: 4.10.6_svelte@3.47.0+typescript@4.6.3
+  svelte-preprocess: 4.10.6_ucc3fdkrl6lb7lhnlfimbouujy
   tslib: 2.4.0
   typescript: 4.6.3
 
@@ -127,7 +127,7 @@ packages:
       rollup: 2.70.2
     dev: true
 
-  /@rollup/plugin-typescript/8.3.2_056aba5e56e0ab5307259a29131f3fbe:
+  /@rollup/plugin-typescript/8.3.2_avvluxsw4cvvgbzftiurghz7xy:
     resolution: {integrity: sha512-MtgyR5LNHZr3GyN0tM7gNO9D0CS+Y+vflS4v/PHmrX17JCkHUYKvQ5jN5o3cz1YKllM3duXUqu3yOHwMPUxhDg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -683,7 +683,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /rollup-plugin-svelte/7.1.0_rollup@2.70.2+svelte@3.47.0:
+  /rollup-plugin-svelte/7.1.0_73czwoeorq7uo4rkugizdazdte:
     resolution: {integrity: sha512-vopCUq3G+25sKjwF5VilIbiY6KCuMNHP1PFvx2Vr3REBNMDllKHFZN2B9jwwC+MqNc3UPKkjXnceLPEjTjXGXg==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -857,7 +857,7 @@ packages:
       sade: 1.8.1
       source-map: 0.7.3
       svelte: 3.47.0
-      svelte-preprocess: 4.10.6_svelte@3.47.0+typescript@4.6.3
+      svelte-preprocess: 4.10.6_ucc3fdkrl6lb7lhnlfimbouujy
       typescript: 4.6.3
     transitivePeerDependencies:
       - '@babel/core'
@@ -872,7 +872,7 @@ packages:
       - sugarss
     dev: true
 
-  /svelte-preprocess/4.10.6_svelte@3.47.0+typescript@4.6.3:
+  /svelte-preprocess/4.10.6_ucc3fdkrl6lb7lhnlfimbouujy:
     resolution: {integrity: sha512-I2SV1w/AveMvgIQlUF/ZOO3PYVnhxfcpNyGt8pxpUVhPfyfL/CZBkkw/KPfuFix5FJ9TnnNYMhACK3DtSaYVVQ==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
